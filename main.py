@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemover, StopWordRemoverFactory, ArrayDictionary
-import re
+import regex as re
 
 st.set_page_config(
     page_title="Analisis sentimen Twitter",
