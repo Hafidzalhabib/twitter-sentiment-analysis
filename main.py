@@ -20,13 +20,41 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
+        'Get Help': 'https://wa.me/6285536956301',
+        'Report a bug': "https://wa.me/6285536956301"
     }
 )
 
 # st.title("_Sentiment Analysis_")
+
+st.header("Pendahuluan")
+st.markdown(r"""
+<div style="text-align: justify;">Munculnya pandemi COVID-19 pada awal tahun 2020 yang menyebar dengan cepat telah menimbulkan banyak korban jiwa, termasuk di Indonesia.
+Banyak kebijakan-kebijakan yang telah dilakukan untuk mencegah penyebaran virus semakin  meluas, salah satunya adalah melalui pembatasan sosial.
+Pembatasan sosial secara efektif mampu mencegah penyebaran virus semakin luas. Namun dengan adanya pembatasan sosial menyebabkan perlambatan pertumbuhan 
+di berbagai sektor, salah satunya adalah sektor ekonomi. Menurut data dari Badan Pusat Statistik (BPS) Indonesia. sejak 
+diberlakukannya pembatasan sosial pada kuartaL II 2020, perekonomian Indonesia tercatat mengalami kontraksi atau penurunan sebesar 4.9% dibandingkan 
+dengan kuartal sebelumnya. Jika kondisi perekonomian terus memburuk, maka besar kemungkinannya terjadi resesi ekonomi. Resesi ekonomi merupakan 
+penurunan signifikan dalam aktivitas ekonomi yang tersebar diseluruh sektor ekonomi selama lebih dari beberapa bulan. Biasanya terlihat dalam 
+PDB rill, pendapatan rill, lapangan kerja, produksi industri, dan penjualan grosir-eceran. Oleh karena itu, Penting untuk menganalisis 
+bagaimana pendapat masyarakat terhadap isu ancaman resesi ekonomi ini. Banyak analisis yang dapat dilakukan, salah satunya melalui media sosial</div>""", unsafe_allow_html=True)
+
+st.markdown(r"""<div style="text-align: justify;">Menurut data dari Kementerian Komunikasi dan Informatika, pengguna internet di Indonesia pada tahun 2022 mencapai 210 juta jiwa atau sekitar 
+73.7% dari total penduduk Indonesia. Dari angka tersebut, sebanyak 191 juta jiwa diantaranya menggunakan internet untuk mengakses media sosial. 
+Ada banyak media sosial yang cukup populer di Indonesia, salah satunya Twitter. Twitter merupakan media sosial yang cukup populer di Indonesia. 
+Pada tahun 2022, pengguna Twitter di Indonesia mencapai 18.45 juta jiwa. Angka ini menjadikan Indonesia sebagai pengguna Twitter Terbesar ke-4 di dunia setelah 
+Amerika Serikat, Jepang, India, dan Brazil. Keberadaan Twitter telah digunakan secara luas dalam masyarakat, sehingga dapat merepresentasikan 
+apa yang sedang ramai dibahas atau diperbincangkan oleh masyarakat. Suatu topik pembahasan yang banyak diulas oleh pengguna dalam periode waktu 
+tertentu dapat menjadi sebuah trending topik di Twitter. Hal ini dapat dijadikan sebagai pedoman untuk menentukan bagaimana sentiman masyarakat terhadap 
+ isu resesi ekonomi melalui analisis sentimen</div>""", unsafe_allow_html=True)
+
+st.markdown(r"""<div style="text-align: justify;"> 
+Analisis sentimen merupakan suatu deteksi berbasis komputasi dan pembelajaran terhadap pendapat atau pandangan (sentimen), emosi, dan subjektivitas 
+di dalam teks. Analisis sentimen digunakan untuk melihat suatu sentimen atau pendapat apakah cenderung masuk dalam kategori tertentu. Umumnya 
+pada analisis sentimen terdapat kategori sentimen positif dan sentimen negatif. Pada penelitian ini analisis sentimen dilakukan pada kumpulan tweet berbahasa Indonesia 
+yang telah dilakukan <i>preprocessing</i> dan pelabelan secara manual menggunakan metode <i>Naive Bayes Classifier</i> (NBC) dan <i>Support Vector Machine</i> (SVM). </div>""", unsafe_allow_html=True)
+
+
 st.header("Metode Klasifikasi")
 st.subheader("_Naïve Bayes Classifier_")
 st.markdown("""<div style="text-align: justify;"><i>Naïve Bayes Classifier</i> (NBC) merupakan sebuah metoda klasifikasi 
